@@ -1,0 +1,3 @@
+# Library Lending System — Design Notes
+
+The `Book` class is responsible for storing book information and managing its availability, while the `Library` class manages the collection of books and coordinates lending operations. The `Library` class delegates borrowing and returning state changes to the `Book` class, which keeps the book's availability rules in one place. The system uses ISBN values to identify books, prevents duplicate ISBNs, and limits each library user to borrowing three books at a time. This design separates responsibilities between classes, making the code easier to maintain, test, and extend.
